@@ -299,13 +299,13 @@ const styles = StyleSheet.create({
     elevation: 3,
   },
   fbButtonText: {
-    color: Colors.white,
+    color: Colors.black,
     // paddingLeft: Fonts.moderateScale(5),
     fontSize: Fonts.moderateScale(15),
     fontFamily: Fonts.type.proximaNovaBold,
     // fontWeight: '500',
     // textDecorationLine: 'underline',
-    borderBottomColor: Colors.white,
+    borderBottomColor: Colors.black,
     borderBottomWidth: 1,
 
     width: "100%",

@@ -1072,7 +1072,7 @@ export default class Intro extends React.Component {
                 <Image
                   // style={styles.images}
                   style={styles.styleLogo}
-                  source={require("../Images/logo-urban-white.png")}
+                  source={require("../Images/logo-png.png")}
                 />
               </View>
 
