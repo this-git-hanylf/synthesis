@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1097970183597",
+    "firebase_url": "https://synthesismobile-1cf99.firebaseio.com",
+    "project_id": "synthesismobile-1cf99",
+    "storage_bucket": "synthesismobile-1cf99.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097970183597:android:0b8653b65abc1216abc524",
+        "android_client_info": {
+          "package_name": "com.ifcasoftware.synthesis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1097970183597-n24nq68nmf4ihccaadeoag56uslfvong.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkMK0rjiHbD-CQskjcpJaqY_YjiXqraKQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1097970183597-n24nq68nmf4ihccaadeoag56uslfvong.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
