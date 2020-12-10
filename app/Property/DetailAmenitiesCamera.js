@@ -99,16 +99,16 @@ const itemHorizontalMargin = wp(4);
 export const sliderWidth = viewportWidth;
 export const itemWidth = slideWidth + itemHorizontalMargin * 2;
 
-class DetailAmenitiesLRT extends React.Component {
+class DetailAmenitiesCamera extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       amenitis_title: "",
       amenitis_info: "",
       amenitis_url: "",
-      stat: "L",
-      gallery_1: require("@Asset/images/amenitis/lrt/gallery1.jpg"),
-      gallery_2: require("@Asset/images/amenitis/lrt/gallery2.jpg"),
+      stat: "S",
+      gallery_1: require("@Asset/images/amenitis/camera/gallery1.jpg"),
+      gallery_2: require("@Asset/images/amenitis/camera/gallery2.jpg"),
       // require("@Asset/images/project_suite_urban.jpg")
     };
 
@@ -408,7 +408,7 @@ class DetailAmenitiesLRT extends React.Component {
             >
               <Image
                 source={this.state.gallery_1}
-                style={{ height: 160, resizeMode: "contain" }}
+                style={{ width: 300, height: 230, resizeMode: "contain" }}
               ></Image>
             </View>
             <View
@@ -421,7 +421,7 @@ class DetailAmenitiesLRT extends React.Component {
             >
               <Image
                 source={this.state.gallery_2}
-                style={{ width: 340, height: 340, resizeMode: "contain" }}
+                style={{ width: 300, height: 230, resizeMode: "contain" }}
               ></Image>
             </View>
           </ScrollView>
@@ -432,4 +432,4 @@ class DetailAmenitiesLRT extends React.Component {
   }
 }
 
-export default DetailAmenitiesLRT;
+export default DetailAmenitiesCamera;

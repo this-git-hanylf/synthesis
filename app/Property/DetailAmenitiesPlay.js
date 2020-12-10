@@ -398,23 +398,28 @@ class DetailAmenitiesPlay extends React.Component {
               <Text style={[Styles.titleGold, { fontSize: 18 }]}>GALLERY</Text>
             </View>
 
-            <View style={{ paddingLeft: 10, paddingRight: 10, paddingTop: 5 }}>
+            <View style={{
+                paddingLeft: 10,
+                paddingRight: 5,
+                paddingBottom: 20,
+                alignSelf: "center",
+              }}>
               <Image
                 source={this.state.gallery_1}
-                style={{ width: "100%", height: 160, resizeMode: "contain" }}
+                style={{ width: 400, height: 130, resizeMode: "contain" }}
               ></Image>
             </View>
             <View
               style={{
                 paddingLeft: 10,
-                paddingRight: 10,
+                paddingRight: 5,
                 paddingBottom: 20,
                 alignSelf: "center",
               }}
             >
               <Image
                 source={this.state.gallery_2}
-                style={{ width: 340, height: 340, resizeMode: "contain" }}
+                style={{ width: 400, height: 250, resizeMode: "contain" }}
               ></Image>
             </View>
           </ScrollView>

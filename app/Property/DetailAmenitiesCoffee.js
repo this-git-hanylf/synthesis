@@ -99,16 +99,16 @@ const itemHorizontalMargin = wp(4);
 export const sliderWidth = viewportWidth;
 export const itemWidth = slideWidth + itemHorizontalMargin * 2;
 
-class DetailAmenitiesDining extends React.Component {
+class DetailAmenitiesCoffee extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       amenitis_title: "",
       amenitis_info: "",
       amenitis_url: "",
-      stat: "D",
-      gallery_1: require("@Asset/images/amenitis/dining/gallery1.jpg"),
-      gallery_2: require("@Asset/images/amenitis/dining/gallery2.jpg"),
+      stat: "C",
+      gallery_1: require("@Asset/images/amenitis/coffee/gallery1.jpg"),
+      gallery_2: require("@Asset/images/amenitis/coffee/gallery2.jpg"),
       // require("@Asset/images/project_suite_urban.jpg")
     };
 
@@ -398,10 +398,23 @@ class DetailAmenitiesDining extends React.Component {
               <Text style={[Styles.titleGold, { fontSize: 18 }]}>GALLERY</Text>
             </View>
 
-            <View style={{ paddingLeft: 10, paddingRight: 10, paddingTop: 5 }}>
+            {/* <View style={{ paddingLeft: 10, paddingRight: 10, paddingTop: 5 }}>
               <Image
                 source={this.state.gallery_1}
-                style={{ width: "100%", height: 180, resizeMode: "contain" }}
+                style={{ width: 340, height: 200, resizeMode: "contain" }}
+              ></Image>
+            </View> */}
+            <View
+              style={{
+                paddingLeft: 10,
+                paddingRight: 10,
+                paddingBottom: 0,
+                alignSelf: "center",
+              }}
+            >
+              <Image
+                source={this.state.gallery_1}
+                style={{ width: 340, height: 230, resizeMode: "contain" }}
               ></Image>
             </View>
             <View
@@ -425,4 +438,4 @@ class DetailAmenitiesDining extends React.Component {
   }
 }
 
-export default DetailAmenitiesDining;
+export default DetailAmenitiesCoffee;

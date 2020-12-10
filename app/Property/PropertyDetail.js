@@ -785,33 +785,22 @@ export default class extends React.Component {
     this.setState({ Alert_Visibility2: visible, pesan2: pesan2 });
   }
 
-  selectAmenDining() {
+  selectAmenPool() { //swimming pool
     // console.log('status',status)
     const items = this.props.items;
     console.log("items", items);
-    Actions.DetailAmenitiesDining({ items: items });
+    Actions.DetailAmenitiesPool({ items: items });
 
-    // if (status == "D") {
-    //   const stat = "";
-    //   this.setState({ stat: "D" });
 
-    //   Actions.DetailAmenitiesDining({ stat: this.state.stat, items: items });
-    //   console.log("stat");
-    // }
   }
 
-  selectAmenMall() {
+  selectAmenCoffee() {
     // console.log('status',status)
     const items = this.props.items;
     console.log("items", items);
     // const stat = "";
-    Actions.DetailAmenitiesMall({ items: items });
-    // if (status == "M") {
-    //   this.setState({ stat: "M" });
-
-    //   Actions.DetailAmenities({ stat: this.state.stat, items: items });
-    //   console.log("stat");
-    // }
+    Actions.DetailAmenitiesCoffee({ items: items });
+ 
   }
 
   selectAmenGym() {
@@ -820,40 +809,25 @@ export default class extends React.Component {
     console.log("items", items);
     // const stat = "";
     Actions.DetailAmenitiesGym({ items: items });
-    // if (status == "G") {
-    //   this.setState({ stat: "G" });
 
-    //   Actions.DetailAmenities({ stat: this.state.stat, items: items });
-    //   console.log("stat");
-    // }
   }
 
-  selectAmenLrt() {
+  selectAmenBbq() {
     // console.log('status',status)
     const items = this.props.items;
     console.log("items", items);
     // const stat = "";
-    Actions.DetailAmenitiesLRT({ items: items });
-    // if (status == "L") {
-    //   this.setState({ stat: "L" });
+    Actions.DetailAmenitiesBbq({ items: items });
 
-    //   Actions.DetailAmenities({ stat: this.state.stat, items: items });
-    //   console.log("stat");
-    // }
   }
 
-  selectAmenPool() {
+  selectAmenCamera() {
     // console.log('status',status)
     const items = this.props.items;
     console.log("items", items);
     // const stat = "";
-    Actions.DetailAmenitiesPool({ items: items });
-    // if (status == "P") {
-    //   this.setState({ stat: "P" });
+    Actions.DetailAmenitiesCamera({ items: items });
 
-    //   Actions.DetailAmenities({ stat: this.state.stat, items: items });
-    //   console.log("stat");
-    // }
   }
 
   selectAmenPlay() {
@@ -1474,7 +1448,7 @@ export default class extends React.Component {
                     <Row>
                       <Col
                         style={{ textAlign: "center", alignItems: "center" }}
-                        onPress={() => this.selectAmenDining()}
+                        onPress={() => this.selectAmenPool()}
                       >
                         <View
                           style={Styles.itemBoxAmen_not_gold}
@@ -1484,7 +1458,52 @@ export default class extends React.Component {
                           <View>
                             <View>
                               <Image
-                                source={require("@Asset/images/amenitis/dining.png")}
+                                source={require("@Asset/images/amenitis/pool.png")}
+                                style={Styles.itemAmen_not_gold}
+                              />
+                            </View>
+                            {/* <Text style={Styles.itemTextAmenities}>{item.amenities_title}</Text> */}
+                            {/* <Text style={Styles.itemLocation}>{item.subject}</Text> */}
+                          </View>
+                        </View>
+                      </Col>
+                      <Col
+                        style={{ textAlign: "center", alignItems: "center" }}
+                        onPress={() => this.selectAmenCoffee()}
+                      >
+                        <View
+                          style={Styles.itemBoxAmen_not_gold}
+                          underlayColor="transparent"
+                          // onPress={()=>Actions.NewsAndPromoDetail({items : item})}
+                        >
+                          <View>
+                            <View>
+                              <Image
+                                source={require("@Asset/images/amenitis/coffee.png")}
+                                style={Styles.itemAmen_not_gold}
+                              />
+                            </View>
+                            {/* <Text style={Styles.itemTextAmenities}>{item.amenities_title}</Text> */}
+                            {/* <Text style={Styles.itemLocation}>{item.subject}</Text> */}
+                          </View>
+                        </View>
+                      </Col>
+                    </Row>
+
+                    <Row>
+                      <Col
+                        style={{ textAlign: "center", alignItems: "center" }}
+                        onPress={() => this.selectAmenPlay()}
+                      >
+                        <View
+                          style={Styles.itemBoxAmen_not_gold}
+                          underlayColor="transparent"
+                          // onPress={()=>Actions.NewsAndPromoDetail({items : item})}
+                        >
+                          <View>
+                            <View>
+                              <Image
+                                source={require("@Asset/images/amenitis/playground.png")}
                                 style={Styles.itemAmen_not_gold}
                               />
                             </View>
@@ -1519,7 +1538,7 @@ export default class extends React.Component {
                     <Row>
                       <Col
                         style={{ textAlign: "center", alignItems: "center" }}
-                        onPress={() => this.selectAmenLrt()}
+                        onPress={() => this.selectAmenBbq()}
                       >
                         <View
                           style={Styles.itemBoxAmen_not_gold}
@@ -1529,7 +1548,7 @@ export default class extends React.Component {
                           <View>
                             <View>
                               <Image
-                                source={require("@Asset/images/amenitis/LRT.png")}
+                                source={require("@Asset/images/amenitis/bbq.png")}
                                 style={Styles.itemAmen_not_gold}
                               />
                             </View>
@@ -1540,7 +1559,7 @@ export default class extends React.Component {
                       </Col>
                       <Col
                         style={{ textAlign: "center", alignItems: "center" }}
-                        onPress={() => this.selectAmenMall()}
+                        onPress={() => this.selectAmenCamera()}
                       >
                         <View
                           style={Styles.itemBoxAmen_not_gold}
@@ -1550,52 +1569,7 @@ export default class extends React.Component {
                           <View>
                             <View>
                               <Image
-                                source={require("@Asset/images/amenitis/mall.png")}
-                                style={Styles.itemAmen_not_gold}
-                              />
-                            </View>
-                            {/* <Text style={Styles.itemTextAmenities}>{item.amenities_title}</Text> */}
-                            {/* <Text style={Styles.itemLocation}>{item.subject}</Text> */}
-                          </View>
-                        </View>
-                      </Col>
-                    </Row>
-
-                    <Row>
-                      <Col
-                        style={{ textAlign: "center", alignItems: "center" }}
-                        onPress={() => this.selectAmenPool()}
-                      >
-                        <View
-                          style={Styles.itemBoxAmen_not_gold}
-                          underlayColor="transparent"
-                          // onPress={()=>Actions.NewsAndPromoDetail({items : item})}
-                        >
-                          <View>
-                            <View>
-                              <Image
-                                source={require("@Asset/images/amenitis/pool.png")}
-                                style={Styles.itemAmen_not_gold}
-                              />
-                            </View>
-                            {/* <Text style={Styles.itemTextAmenities}>{item.amenities_title}</Text> */}
-                            {/* <Text style={Styles.itemLocation}>{item.subject}</Text> */}
-                          </View>
-                        </View>
-                      </Col>
-                      <Col
-                        style={{ textAlign: "center", alignItems: "center" }}
-                        onPress={() => this.selectAmenPlay()}
-                      >
-                        <View
-                          style={Styles.itemBoxAmen_not_gold}
-                          underlayColor="transparent"
-                          // onPress={()=>Actions.NewsAndPromoDetail({items : item})}
-                        >
-                          <View>
-                            <View>
-                              <Image
-                                source={require("@Asset/images/amenitis/playground.png")}
+                                source={require("@Asset/images/amenitis/camera.png")}
                                 style={Styles.itemAmen_not_gold}
                               />
                             </View>

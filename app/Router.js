@@ -39,10 +39,10 @@ import PageTerm from "./Akun/PageTerm";
 import PDFViewer from "./components/PDFViewer/index";
 
 import PropertyDetail from "./Property/PropertyDetail";
-import DetailAmenitiesDining from "./Property/DetailAmenitiesDining";
-import DetailAmenitiesMall from "./Property/DetailAmenitiesMall";
+import DetailAmenitiesCoffee from "./Property/DetailAmenitiesCoffee";
+import DetailAmenitiesBbq from "./Property/DetailAmenitiesBbq";
 import DetailAmenitiesGym from "./Property/DetailAmenitiesGym";
-import DetailAmenitiesLRT from "./Property/DetailAmenitiesLRT";
+import DetailAmenitiesCamera from "./Property/DetailAmenitiesCamera";
 import DetailAmenitiesPool from "./Property/DetailAmenitiesPool";
 import DetailAmenitiesPlay from "./Property/DetailAmenitiesPlay";
 
@@ -1011,16 +1011,16 @@ class Routes extends Component {
               tabs={true}
             />
             <Scene
-              key="DetailAmenitiesDining"
-              component={DetailAmenitiesDining}
+              key="DetailAmenitiesCoffee"
+              component={DetailAmenitiesCoffee}
               title=""
               hideNavBar
               translucent={true}
               tabs={true}
             />
             <Scene
-              key="DetailAmenitiesMall"
-              component={DetailAmenitiesMall}
+              key="DetailAmenitiesBbq"
+              component={DetailAmenitiesBbq}
               title=""
               hideNavBar
               translucent={true}
@@ -1035,8 +1035,8 @@ class Routes extends Component {
               tabs={true}
             />
             <Scene
-              key="DetailAmenitiesLRT"
-              component={DetailAmenitiesLRT}
+              key="DetailAmenitiesCamera"
+              component={DetailAmenitiesCamera}
               title=""
               hideNavBar
               translucent={true}

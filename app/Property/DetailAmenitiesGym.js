@@ -398,10 +398,10 @@ class DetailAmenitiesGym extends React.Component {
               <Text style={[Styles.titleGold, { fontSize: 18 }]}>GALLERY</Text>
             </View>
 
-            <View style={{ paddingLeft: 10, paddingRight: 10, paddingTop: 5 }}>
+            <View style={{ paddingLeft: 10, paddingRight: 10, paddingTop: 5,alignSelf: "center", }}>
               <Image
                 source={this.state.gallery_1}
-                style={{ width: "100%", height: 160, resizeMode: "contain" }}
+                style={{ width: 340, height: 250, resizeMode: "contain" }}
               ></Image>
             </View>
             <View
@@ -414,7 +414,7 @@ class DetailAmenitiesGym extends React.Component {
             >
               <Image
                 source={this.state.gallery_2}
-                style={{ width: 340, height: 340, resizeMode: "contain" }}
+                style={{ width: 340, height: 250, resizeMode: "contain" }}
               ></Image>
             </View>
           </ScrollView>

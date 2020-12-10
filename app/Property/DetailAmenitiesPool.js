@@ -107,7 +107,7 @@ class DetailAmenitiesPool extends React.Component {
       amenitis_info: "",
       amenitis_url: "",
       stat: "P",
-      gallery_1: require("@Asset/images/amenitis/pool/gallery1.png"),
+      gallery_1: require("@Asset/images/amenitis/pool/gallery1.jpg"),
       gallery_2: require("@Asset/images/amenitis/pool/gallery2.jpg"),
       // require("@Asset/images/project_suite_urban.jpg")
     };
@@ -398,23 +398,38 @@ class DetailAmenitiesPool extends React.Component {
               <Text style={[Styles.titleGold, { fontSize: 18 }]}>GALLERY</Text>
             </View>
 
-            <View style={{ paddingLeft: 10, paddingRight: 10, paddingTop: 5 }}>
+            {/* <View style={{ paddingLeft: 10, paddingRight: 10, paddingTop: 5 }}>
               <Image
                 source={this.state.gallery_1}
-                style={{ width: "100%", height: 170, resizeMode: "contain" }}
+                style={{width: '100%', height: 170, resizeMode: "contain", }}
+                // style={{ width: "100%", height: 170, resizeMode: "contain" }}
+
+              ></Image>
+            </View> */}
+            <View
+              style={{
+                paddingLeft: 10,
+                paddingRight: 5,
+                paddingBottom: 20,
+                alignSelf: "center",
+              }}
+            >
+              <Image
+                source={this.state.gallery_1}
+                style={{ width: 400, height: 130, resizeMode: "contain" }}
               ></Image>
             </View>
             <View
               style={{
                 paddingLeft: 10,
-                paddingRight: 10,
+                paddingRight: 5,
                 paddingBottom: 20,
                 alignSelf: "center",
               }}
             >
               <Image
                 source={this.state.gallery_2}
-                style={{ width: 340, height: 340, resizeMode: "contain" }}
+                style={{ width: 400, height: 130, resizeMode: "contain" }}
               ></Image>
             </View>
           </ScrollView>

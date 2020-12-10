@@ -553,9 +553,11 @@ export default {
   itemAmen_not_gold: {
     marginBottom: 10,
     width: "90%",
-    height: 160,
+    height: 180,
     borderTopLeftRadius: 5,
     borderTopRightRadius: 5,
+    borderBottomLeftRadius: 5,
+    borderBottomRightRadius: 5,
   },
   itemFavorite: {
     position: "absolute",
