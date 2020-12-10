@@ -73,14 +73,15 @@ export default class SliderEntry extends Component {
         <View
           style={[styles.textContainer, even ? styles.textContainerEven : {}]}
         >
-          {/* {uppercaseTitle} */}
+          {uppercaseTitle}
+     
           {/* <Text
             style={[styles.subtitle, even ? styles.subtitleEven : {}]}
             numberOfLines={2}
           >
-                    LRT Cikunir 1 */}
-          {/* {subtitle} */}
-          {/* </Text> */}
+                    LRT Cikunir 1
+          {subtitle}
+          </Text> */}
         </View>
       </TouchableOpacity>
     );

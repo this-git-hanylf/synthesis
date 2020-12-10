@@ -27,7 +27,7 @@ export default StyleSheet.create({
     width: itemWidth,
     height: slideHeight,
     paddingHorizontal: itemHorizontalMargin,
-    paddingBottom: 18, // needed for shadow
+    paddingBottom: 8, // needed for shadow
   },
   shadow: {
     position: "absolute",
@@ -58,8 +58,8 @@ export default StyleSheet.create({
     ...StyleSheet.absoluteFillObject,
     resizeMode: "contain",
     borderRadius: IS_IOS ? entryBorderRadius : 0,
-    // borderTopLeftRadius: entryBorderRadius,
-    // borderTopRightRadius: entryBorderRadius
+    borderTopLeftRadius: entryBorderRadius,
+    borderTopRightRadius: entryBorderRadius,
     borderRadius: entryBorderRadius,
   },
   // image's border radius is buggy on iOS; let's hack it!
@@ -69,23 +69,23 @@ export default StyleSheet.create({
     left: 0,
     right: 0,
     height: entryBorderRadius,
-    // backgroundColor: colors.gold
+    backgroundColor: colors.gold
   },
   radiusMaskEven: {
-    // backgroundColor: colors.gold
+    backgroundColor: colors.gold
   },
   textContainer: {
     justifyContent: "center",
 
-    paddingTop: 10 - entryBorderRadius,
-    paddingBottom: 10,
+    paddingTop: 20 - entryBorderRadius, //tadinya 10 -
+    paddingBottom: 20, //tadinya 10
     paddingHorizontal: 16,
-    // backgroundColor: colors.gold,
+    backgroundColor: colors.gold,
     borderBottomLeftRadius: entryBorderRadius,
     borderBottomRightRadius: entryBorderRadius,
   },
   textContainerEven: {
-    // backgroundColor: colors.gold
+    backgroundColor: colors.gold
   },
   title: {
     color: "white",

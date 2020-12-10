@@ -45,7 +45,7 @@ import Carousel, {
 import { sliderWidth, itemWidth } from "./styles/SliderEntry";
 import SliderEntry from "../components/SlideEntry";
 import styles, { colors } from "./styles/index";
-import { Fonts } from "../Themes";
+import { Fonts, Colors } from "../Themes";
 import { ENTRIES1, ENTRIES2 } from "./static/entries";
 import { scrollInterpolators, animatedStyles } from "./utils/animations";
 import CardSlide from "../components/CardSlide";
@@ -64,6 +64,7 @@ import Siren from "react-native-siren";
 import NotifService from "../components/NotifService";
 var PushNotification = require("react-native-push-notification");
 import Icon_ from "react-native-vector-icons/FontAwesome";
+
 //manggil notifservice yang ditaro di componen.
 
 // const versionSpecificRules = [
@@ -182,6 +183,7 @@ export default class Home extends Component {
       this.getPromo();
       this.getNews();
       this.getCountNotif();
+      // this.getForeachProject();
       // this.checkPermission();
       // this.createNotificationListeners();
     });
@@ -222,6 +224,21 @@ export default class Home extends Component {
       requestPermissions: true,
     });
   }
+
+  // getForeachProject() {
+  //   // const { dataProject } = this.state.dataTower;
+  //   // console.log("dataProject", dataProject)
+  //   // dataProject.forEach((datas) => {
+  //   //   console.log("data foreach", datas);
+  //   //   // if (datas.project_no === data.project_no) {
+  //   //   //   if (datas.checked) {
+  //   //   //     datas.checked = false;
+  //   //   //   } else {
+  //   //   //     datas.checked = true;
+  //   //   //   }
+  //   //   // }
+  //   // });
+  // }
 
   getCountNotif = async () => {
     //  let result = res.Data;
@@ -462,6 +479,8 @@ export default class Home extends Component {
     // });
   };
 
+ 
+
   mainExample(number, title) {
     const { slider1ActiveSlide } = this.state;
 
@@ -499,7 +518,7 @@ export default class Home extends Component {
           >
             <Text>tes</Text>
           </Button> */}
-          <View style={{ marginLeft: 20, marginRight: 20 }}>
+          <View style={{ marginLeft: 20, marginRight: 20, bottom: 20 }}>
             {/* <Item style={styles.marginround}  > */}
             <Item
               style={styles.marginround}
@@ -578,6 +597,8 @@ export default class Home extends Component {
           {this.state.dataTower.length == 0 ? (
             <ActivityIndicator size="large" color="#fff" />
           ) : (
+ 
+
             <Carousel
               ref={(c) => (this._slider1Ref = c)}
               data={this.state.dataTower}
@@ -597,10 +618,35 @@ export default class Home extends Component {
               lockScrollWhileSnapping={true}
               autoplay={false}
               autoplayDelay={1000}
-              autoplayInterval={3000}
+                autoplayInterval={3000}
+                onSnapToItem={(index) => this.setState({ slider1ActiveSlide: index }) }
+                />
+                
+         
+              
+            )}
+          <Pagination
+            dotsLength={this.state.dataTower.length}
+            activeDotIndex={slider1ActiveSlide}
+            containerStyle={{ paddingTop: 5 }}
+            dotStyle={{
+                 width: 8,
+                  height: 8,
+                  borderRadius: 4,
+                  marginHorizontal: 2,
+                  backgroundColor: 'rgba(255, 255, 255, 0.92)'
+              }}
+              inactiveDotStyle={Colors.black}
+              inactiveDotOpacity={0.4}
+              inactiveDotScale={0.6}
+              carouselRef={this._slider1Ref}
+              tappableDots={!!this._slider1Ref}
             />
-          )}
+         
+          
+        
         </View>
+        
       </View>
     );
   }
@@ -651,6 +697,8 @@ export default class Home extends Component {
       </TouchableOpacity>
     );
   }
+
+  
 
   render() {
     const example1 = this.mainExample(1, "");
