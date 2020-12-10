@@ -439,6 +439,13 @@ export default class extends React.Component {
     }
   };
 
+  masterunit() {
+   
+    // Actions.project({ goTo: "MasterUnit" });
+    Actions.project({ goTo: "ProductProjectPage" });
+   
+  }
+
   render() {
     if (this.state.isLogin) {
       return (
@@ -626,6 +633,15 @@ export default class extends React.Component {
                   >
                     <View>
                       <Text style={Styles.textMenu}>My QR Code</Text>
+                    </View>
+                  </ListItem>
+
+                    <ListItem
+                    style={Styles.infoItem}
+                    onPress={() => this.masterunit()}
+                  >
+                    <View>
+                      <Text style={Styles.textMenu}>Master Unit</Text>
                     </View>
                   </ListItem>
 

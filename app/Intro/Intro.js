@@ -683,7 +683,7 @@ export default class Intro extends React.Component {
 
           result["CountNotif"] = data;
           console.log("count notif di intro", data);
-          this.signIn(result);
+          // this.signIn(result);
         }
       })
       .catch((error) => {

@@ -189,6 +189,9 @@ import { urlApi } from "@Config/services";
 import PushNotification from "react-native-push-notification";
 import NotifService from "@Component/NotifService";
 
+//Master Unit
+import MasterUnit from "./MasterUnit/masterUnit";
+
 const TabIcon = ({ focused, iconName }) => {
   var color = focused ? "#AB9E84" : "#b7b7b7";
   var tintColor = focused ? "#AB9E84" : "#b7b7b7";
@@ -1202,6 +1205,14 @@ class Routes extends Component {
             <Scene
               key="FormNewBooking"
               component={FormNewBooking}
+              title=""
+              hideNavBar
+              translucent={true}
+              tabs={true}
+            />
+            <Scene
+              key="MasterUnit"
+              component={MasterUnit}
               title=""
               hideNavBar
               translucent={true}

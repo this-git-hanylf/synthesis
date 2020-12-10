@@ -142,7 +142,8 @@ class Categoris extends React.Component {
     data["picture_booking_descs_url"] = item.picture_booking_descs_url;
     console.log("data", data);
     if (this.props.dyn) {
-      _navigate("UnitEnquiryProjectPage", { prevItems: data });
+      // _navigate("UnitEnquiryProjectPage", { prevItems: data });
+      _navigate("MasterUnit", { prevItems: data });
     } else {
       // _navigate("chooseZone", { items: this.props.items });
       _navigate("ChooseZoneModif", {

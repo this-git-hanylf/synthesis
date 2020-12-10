@@ -169,6 +169,7 @@ export default class Home extends Component {
       isCorLoaded: true,
       // badge_notif_db: await _getData("@CountNotif"),
     };
+    console.log("data", data);
     // const CountnotifdiHome = await _getData("@CountNotif");
     // console.log("count notif di home", CountnotifdiHome);
     // Actions.refresh("tabbar", {
@@ -474,9 +475,9 @@ export default class Home extends Component {
         <View style={{ flexDirection: "column" }}>
           <ImageBackground
             style={styles.backgroundImage2}
-            source={require("../Images/tes3copy.png")}
+            source={require("../Images/main-image.jpg")}
           >
-            <Text
+           <Text
               style={{
                 color: "#fff",
                 top: "15%",
@@ -488,6 +489,7 @@ export default class Home extends Component {
             >
               Hello {this.state.name}
             </Text>
+            
           </ImageBackground>
 
           {/* <Button
