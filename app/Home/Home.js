@@ -554,7 +554,7 @@ export default class Home extends Component {
         <View style={{ paddingVertical: 30 }}>
           <Text
             style={{
-              color: "#fff",
+              color: Colors.goldUrbban,
               fontFamily: Fonts.type.proximaNovaBold,
               letterSpacing: 2,
               alignItems: "center",
@@ -634,7 +634,7 @@ export default class Home extends Component {
                   height: 8,
                   borderRadius: 4,
                   marginHorizontal: 2,
-                  backgroundColor: 'rgba(255, 255, 255, 0.92)'
+                  backgroundColor: Colors.goldUrban
               }}
               inactiveDotStyle={Colors.black}
               inactiveDotOpacity={0.4}

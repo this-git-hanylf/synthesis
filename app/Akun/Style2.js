@@ -209,7 +209,7 @@ export default {
   ownerName: {
     fontFamily: "Montserrat-Regular",
     fontSize: 18,
-    color: Colors.white,
+    color: Colors.navyUrban,
     marginTop: 20,
     marginBottom: 5,
     alignSelf: "center",
@@ -223,7 +223,7 @@ export default {
   ownerGrup: {
     fontFamily: Fonts.type.proximaNovaReg,
     fontSize: 10,
-    color: Colors.white,
+    color: Colors.navyUrban,
     alignSelf: "center",
     letterSpacing: 1,
   },
@@ -526,7 +526,7 @@ export default {
     fontWeight: "400",
   },
   textMenu: {
-    color: Colors.white,
+    color: Colors.blueUrban,
     fontFamily: Fonts.type.proximaNovaReg,
     letterSpacing: 1,
     fontSize: 16,

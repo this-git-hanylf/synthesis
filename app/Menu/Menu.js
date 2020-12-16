@@ -395,7 +395,7 @@ export default class Menu extends React.Component {
             >
               <Text
                 style={{
-                  color: Colors.white,
+                  color: Colors.navyUrban,
                   fontFamily: Fonts.type.proximaNovaBoldWeb,
                   fontSize: 20,
                 }}
@@ -563,7 +563,7 @@ export default class Menu extends React.Component {
       return this.state.isLoaded ? (
         <ImageBackground
           style={Styles.backgroundImage_2}
-          source={require("../Images/Alert03-min.png")}
+          source={require("../Images/background-blue.png")}
         >
           <View
             style={{

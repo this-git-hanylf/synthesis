@@ -423,7 +423,7 @@ export default class Profile extends React.Component {
           >
             <Text
               style={{
-                color: Colors.white,
+                color: Colors.navyUrban,
                 fontFamily: "Montserrat-Regular",
                 fontSize: 12,
               }}
@@ -459,7 +459,7 @@ export default class Profile extends React.Component {
           >
             <Text
               style={{
-                color: Colors.white,
+                color: Colors.navyUrban,
                 fontFamily: "Montserrat-Regular",
                 fontSize: 12,
               }}
@@ -495,7 +495,7 @@ export default class Profile extends React.Component {
           >
             <Text
               style={{
-                color: Colors.white,
+                color: Colors.navyUrban,
                 fontFamily: "Montserrat-Regular",
                 fontSize: 12,
               }}
@@ -1007,7 +1007,7 @@ export default class Profile extends React.Component {
                   <TouchableOpacity onPress={() => this.showAlert()}>
                     <Text
                       style={{
-                        color: Colors.white,
+                        color: Colors.navyUrban,
                         fontSize: 12,
                         fontFamily: "Montserrat-Regular",
                         borderBottomColor: "#fff",
@@ -1041,7 +1041,7 @@ export default class Profile extends React.Component {
               >
                 <Text
                   style={{
-                    color: Colors.white,
+                    color: Colors.navyUrban,
                     fontFamily: "Montserrat-Regular",
                     fontSize: 12,
                   }}
@@ -1080,7 +1080,7 @@ export default class Profile extends React.Component {
               >
                 <Text
                   style={{
-                    color: Colors.white,
+                    color: Colors.navyUrban,
                     fontFamily: "Montserrat-Regular",
                     fontSize: 12,
                   }}
@@ -1119,7 +1119,7 @@ export default class Profile extends React.Component {
               >
                 <Text
                   style={{
-                    color: Colors.white,
+                    color: Colors.navyUrban,
                     fontFamily: "Montserrat-Regular",
                     fontSize: 12,
                   }}
@@ -1157,7 +1157,7 @@ export default class Profile extends React.Component {
               >
                 <Text
                   style={{
-                    color: Colors.white,
+                    color: Colors.navyUrban,
                     fontFamily: "Montserrat-Regular",
                     fontSize: 12,
                   }}

@@ -111,10 +111,15 @@ class DownloadPage extends Component {
 
   getFile = () => {
     const items = this.props.items;
-
+    console.log("items download", items);
     {
       isMount
-        ? fetch(urlApi + "c_download2/getFile/" + items.db_profile, {
+        ? fetch(urlApi + "c_download2/getFile/" +
+          items.db_profile +
+          "/" +
+              items.entity_cd +
+          "/" +
+              items.project_no, {
             method: "POST",
             headers: this.state.hd,
           })

@@ -850,7 +850,7 @@ export default class extends React.Component {
       return (
         <ImageBackground
           style={Styles.backgroundImage}
-          source={require("../Images/Alert01-min.png")}
+          source={require("../Images/background-blue.png")}
         >
           <View
             style={{

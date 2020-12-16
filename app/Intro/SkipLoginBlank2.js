@@ -102,7 +102,7 @@ class SkipLoginBlank2 extends React.Component {
           >
             <Text
               style={{
-                color: Colors.white,
+                color: Colors.navyUrban,
                 fontFamily: Fonts.type.proximaNovaBoldWeb,
                 fontSize: 20
               }}

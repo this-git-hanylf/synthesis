@@ -196,7 +196,7 @@ export default {
   textInput: {
     fontFamily: "Montserrat-Regular",
     borderBottomWidth: 1,
-    borderColor: "#CCC",
+    borderColor: Colors.navyUrban,
     fontSize: 12,
     width: "100%",
     borderRadius: 5,
@@ -204,7 +204,7 @@ export default {
     paddingVertical: 0,
     paddingHorizontal: 20,
     // color: "#666"
-    color: Colors.white,
+    color: Colors.navyUrban,
   },
   textInputMulti: {
     fontFamily: "Montserrat-Regular",

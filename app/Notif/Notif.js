@@ -937,7 +937,7 @@ export default class Notif extends React.Component {
             >
               <Text
                 style={{
-                  color: Colors.white,
+                  color: Colors.navyUrban,
                   fontFamily: Fonts.type.proximaNovaBoldWeb,
                   fontSize: 20,
                 }}
@@ -1102,7 +1102,7 @@ export default class Notif extends React.Component {
       return (
         <ImageBackground
           style={Styles.backgroundImage}
-          source={require("../Images/Alert02-min.png")}
+          source={require("../Images/background-blue.png")}
         >
           <View
             style={{

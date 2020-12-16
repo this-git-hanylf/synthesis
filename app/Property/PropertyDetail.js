@@ -482,9 +482,9 @@ export default class extends React.Component {
           parallaxFactor={0.1}
           {...parallaxProps}
         />
-        {/* <View style={styles.newsTitle_tower} onPress={() => this.goTo()}>
+        <View style={styles.newsTitle_tower} onPress={() => this.goTo(item)}>
           <Text style={styles.newsTitleText_small_tower}>{item.descs}</Text>
-        </View> */}
+        </View>
       </TouchableOpacity>
     );
   }
@@ -1110,7 +1110,7 @@ export default class extends React.Component {
                           <Icon
                             active
                             name="arrow-left"
-                            style={[Style.textWhite, { fontSize: 28 }]}
+                            style={[Style.textNavy, { fontSize: 28 }]}
                             type="MaterialCommunityIcons"
                           />
                         </Button>
@@ -1120,7 +1120,7 @@ export default class extends React.Component {
                         <Text
                           style={{
                             // fontWeight: "900",
-                            color: "#FFFFFF",
+                            color: Colors.navyUrban,
                             fontSize: 15,
                             textAlign: "center",
                             fontFamily: Fonts.type.sfuiDisplayBold,
@@ -1270,7 +1270,7 @@ export default class extends React.Component {
                   {this.state.overview ? (
                     <Text
                       style={{
-                        color: Colors.white,
+                        color: Colors.navyUrbans,
                         textAlign: "center",
                         // alignContent:'center',
                         fontSize: 18,
@@ -1311,12 +1311,12 @@ export default class extends React.Component {
                         raised
                         name="phone"
                         type="FontAwesome"
-                        style={{ color: "#fff" }}
+                        style={{ color: Colors.navyUrban }}
                       />
                       <Text
                         style={{
                           fontFamily: Fonts.type.proximaNovaReg,
-                          color: Colors.white,
+                          color: Colors.navyUrban,
                           fontSize: 14,
                           paddingTop: 5,
                         }}
@@ -1340,12 +1340,12 @@ export default class extends React.Component {
                         reverse
                         name="map-marker"
                         type="FontAwesome"
-                        style={{ color: "#fff" }}
+                        style={{ color: Colors.navyUrban }}
                       />
                       <Text
                         style={{
                           fontFamily: Fonts.type.proximaNovaReg,
-                          color: Colors.white,
+                          color: Colors.navyUrban,
                           fontSize: 14,
                           paddingTop: 5,
                         }}
@@ -1367,12 +1367,12 @@ export default class extends React.Component {
                         raised
                         name="envelope"
                         type="FontAwesome"
-                        style={{ color: "#fff" }}
+                        style={{ color: Colors.navyUrban }}
                       />
                       <Text
                         style={{
                           fontFamily: Fonts.type.proximaNovaReg,
-                          color: Colors.white,
+                          color: Colors.navyUrban,
                           fontSize: 14,
                           paddingTop: 5,
                         }}
@@ -1808,7 +1808,7 @@ export default class extends React.Component {
                     <View style={Styles.overview}>
                       <Text
                         style={{
-                          color: "white",
+                          color: Colors.navyUrban,
                           fontSize: 14,
                           textAlign: "center",
                           fontFamily: Fonts.type.proximaNovaReg,
@@ -1818,7 +1818,7 @@ export default class extends React.Component {
                       </Text>
                       <Text
                         style={{
-                          color: "white",
+                          color: Colors.navyUrban,
                           fontSize: 14,
                           textAlign: "center",
                           fontFamily: Fonts.type.proximaNovaReg,
@@ -1828,7 +1828,7 @@ export default class extends React.Component {
                       </Text>
                       <Text
                         style={{
-                          color: "white",
+                          color: Colors.navyUrban,
                           fontSize: 14,
                           textAlign: "center",
                           fontFamily: Fonts.type.proximaNovaReg,
@@ -1850,6 +1850,7 @@ export default class extends React.Component {
                         width: 110,
                         textAlign: "center",
                         alignItems: "center",
+                        
                       }}
                       onPress={() =>
                         Linking.openURL(
@@ -1861,7 +1862,7 @@ export default class extends React.Component {
                         raised
                         name="phone"
                         type="FontAwesome"
-                        style={{ color: "#fff" }}
+                        style={{ color: Colors.navyUrban }}
                       />
                       <Text
                         style={{
@@ -1890,7 +1891,7 @@ export default class extends React.Component {
                         reverse
                         name="map-marker"
                         type="FontAwesome"
-                        style={{ color: "#fff" }}
+                        style={{ color: Colors.navyUrban }}
                       />
                       <Text
                         style={{
@@ -1917,12 +1918,12 @@ export default class extends React.Component {
                         raised
                         name="envelope"
                         type="FontAwesome"
-                        style={{ color: "#fff" }}
+                        style={{ color: Colors.navyUrban }}
                       />
                       <Text
                         style={{
                           fontFamily: Fonts.type.proximaNovaReg,
-                          color: Colors.white,
+                          color: Colors.navyUrban,
                           fontSize: 14,
                           paddingTop: 5,
                         }}
@@ -1980,12 +1981,12 @@ export default class extends React.Component {
                             raised
                             name="phone"
                             type="FontAwesome"
-                            style={{ color: "#fff" }}
+                            style={{ color: Colors.navyUrban }}
                           />
                           <Text
                             style={{
                               fontFamily: Fonts.type.proximaNovaReg,
-                              color: Colors.white,
+                              color: Colors.navyUrban,
                               fontSize: 14,
                               paddingTop: 5,
                             }}
@@ -2008,12 +2009,12 @@ export default class extends React.Component {
                             reverse
                             name="desktop"
                             type="FontAwesome"
-                            style={{ color: "#fff" }}
+                            style={{ color: Colors.navyUrban }}
                           />
                           <Text
                             style={{
                               fontFamily: Fonts.type.proximaNovaReg,
-                              color: Colors.white,
+                              color: Colors.navyUrban,
                               fontSize: 14,
                               paddingTop: 5,
                             }}
@@ -2034,12 +2035,12 @@ export default class extends React.Component {
                             raised
                             name="envelope"
                             type="FontAwesome"
-                            style={{ color: "#fff" }}
+                            style={{ color: Colors.navyUrban }}
                           />
                           <Text
                             style={{
                               fontFamily: Fonts.type.proximaNovaReg,
-                              color: Colors.white,
+                              color: Colors.navyUrban,
                               fontSize: 14,
                               paddingTop: 5,
                             }}
@@ -2064,12 +2065,12 @@ export default class extends React.Component {
                             raised
                             name="facebook-square"
                             type="FontAwesome"
-                            style={{ color: "#fff" }}
+                            style={{ color: Colors.navyUrban }}
                           />
                           <Text
                             style={{
                               fontFamily: Fonts.type.proximaNovaReg,
-                              color: Colors.white,
+                              color: Colors.navyUrban,
                               fontSize: 14,
                               paddingTop: 5,
                             }}
@@ -2092,12 +2093,12 @@ export default class extends React.Component {
                             raised
                             name="youtube"
                             type="FontAwesome"
-                            style={{ color: "#fff" }}
+                            style={{ color: Colors.navyUrban }}
                           />
                           <Text
                             style={{
                               fontFamily: Fonts.type.proximaNovaReg,
-                              color: Colors.white,
+                              color: Colors.navyUrban,
                               fontSize: 14,
                               paddingTop: 5,
                             }}
@@ -2120,13 +2121,13 @@ export default class extends React.Component {
                             raised
                             name="instagram"
                             type="FontAwesome"
-                            style={{ color: "#fff" }}
+                            style={{ color: Colors.navyUrban }}
                           />
                           {/* <Text>{this.state.project[0].instagram_url}</Text> */}
                           <Text
                             style={{
                               fontFamily: Fonts.type.proximaNovaReg,
-                              color: Colors.white,
+                              color: Colors.navyUrban,
                               fontSize: 14,
                               paddingTop: 5,
                             }}
@@ -2150,12 +2151,12 @@ export default class extends React.Component {
                             raised
                             name="phone"
                             type="FontAwesome"
-                            style={{ color: "#fff" }}
+                            style={{ color: Colors.navyUrban }}
                           />
                           <Text
                             style={{
                               fontFamily: Fonts.type.proximaNovaReg,
-                              color: Colors.white,
+                              color: Colors.navyUrban,
                               fontSize: 14,
                               paddingTop: 5,
                             }}
@@ -2175,12 +2176,12 @@ export default class extends React.Component {
                             reverse
                             name="ios-globe"
                             type="Ionicons"
-                            style={{ color: "#fff" }}
+                            style={{ color: Colors.navyUrban }}
                           />
                           <Text
                             style={{
                               fontFamily: Fonts.type.proximaNovaReg,
-                              color: Colors.white,
+                              color: Colors.navyUrban,
                               fontSize: 14,
                               paddingTop: 5,
                             }}
@@ -2200,12 +2201,12 @@ export default class extends React.Component {
                             raised
                             name="envelope"
                             type="FontAwesome"
-                            style={{ color: "#fff" }}
+                            style={{ color: Colors.navyUrban }}
                           />
                           <Text
                             style={{
                               fontFamily: Fonts.type.proximaNovaReg,
-                              color: Colors.white,
+                              color: Colors.navyUrban,
                               fontSize: 14,
                               paddingTop: 5,
                             }}
@@ -2232,7 +2233,7 @@ export default class extends React.Component {
                           <Text
                             style={{
                               fontFamily: Fonts.type.proximaNovaReg,
-                              color: Colors.white,
+                              color: Colors.navyUrban,
                               fontSize: 14,
                               paddingTop: 5,
                             }}
@@ -2258,7 +2259,7 @@ export default class extends React.Component {
                           <Text
                             style={{
                               fontFamily: Fonts.type.proximaNovaReg,
-                              color: Colors.white,
+                              color: Colors.navyUrban,
                               fontSize: 14,
                               paddingTop: 5,
                             }}
@@ -2278,12 +2279,12 @@ export default class extends React.Component {
                             raised
                             name="youtube"
                             type="FontAwesome"
-                            style={{ color: "#fff" }}
+                            style={{ color: Colors.navyUrban }}
                           />
                           <Text
                             style={{
                               fontFamily: Fonts.type.proximaNovaReg,
-                              color: Colors.white,
+                              color: Colors.navyUrban,
                               fontSize: 14,
                               paddingTop: 5,
                             }}
@@ -2307,7 +2308,7 @@ export default class extends React.Component {
                     <Icon
                       active
                       name="arrow-left"
-                      style={[Style.textWhite, { fontSize: 28 }]}
+                      style={[Style.textNavy, { fontSize: 28 }]}
                       type="MaterialCommunityIcons"
                     />
                   </Button>
@@ -2322,7 +2323,7 @@ export default class extends React.Component {
                 >
                   <Text
                     style={{
-                      color: Colors.white,
+                      color: Colors.navyUrban,
                       fontFamily: Fonts.type.proximaNovaBoldWeb,
                       fontSize: 20,
                     }}
