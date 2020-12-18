@@ -368,17 +368,29 @@ class ChooseZoneModif extends React.Component {
     }
   };
 
-  selectAmenDining() {
+ selectAmenBbq() {
+    // console.log('status',status)
     const items = this.props.items;
     console.log("items", items);
-    Actions.DetailAmenitiesDining({ items: items });
+    // const stat = "";
+    Actions.DetailAmenitiesBbq({ items: items });
+
   }
 
-  selectAmenMall() {
+
+
+  selectAmenPlay() {
+    // console.log('status',status)
     const items = this.props.items;
     console.log("items", items);
+    Actions.DetailAmenitiesPlay({ items: items });
+    // const stat = "";
+    // if (status == "Y") {
+    //   this.setState({ stat: "Y" });
 
-    Actions.DetailAmenitiesMall({ items: items });
+    //   Actions.DetailAmenities({ stat: this.state.stat, items: items });
+    //   console.log("stat");
+    // }
   }
 
   selectAmenGym() {
@@ -665,7 +677,7 @@ class ChooseZoneModif extends React.Component {
                   </Text>
                 </View>
                 {this.state.group !== "AGENT" ? (
-                  <View style={{ paddingTop: "110%" }}>
+                  <View style={{ paddingTop: "130%" }}>
                     <Button
                       style={Style.signInBtnMedium}
                       onPress={() => this.alertNUP()}
@@ -686,7 +698,7 @@ class ChooseZoneModif extends React.Component {
                     </Button>
                   </View>
                 ) : (
-                  <View style={{ paddingTop: "110%" }}>
+                  <View style={{ paddingTop: "130%"}}>
                     {/* <Button
                       style={Style.signInBtnMedium}
                       // onPress={() => this.alertNUP()}
@@ -730,7 +742,7 @@ class ChooseZoneModif extends React.Component {
                             </Text>
                           </Button>
                         ) : (
-                          <View style={{ paddingTop: "110%" }}>
+                         
                             <Button
                               style={Style.signInBtnMedium}
                               onPress={() => this.alertNUP()}
@@ -749,7 +761,7 @@ class ChooseZoneModif extends React.Component {
                                 Booking Priority Pass
                               </Text>
                             </Button>
-                          </View>
+                        
                         )
                       ) : (
                         <ActivityIndicator />
@@ -781,7 +793,7 @@ class ChooseZoneModif extends React.Component {
             <View style={{ paddingTop: 20 }}>
               <Text
                 style={{
-                  color: Colors.white,
+                  color: Colors.navyUrbans,
                   textAlign: "center",
                   // alignContent:'center',
                   fontSize: 18,
@@ -809,7 +821,7 @@ class ChooseZoneModif extends React.Component {
                 <Row>
                   <Col
                     style={{ textAlign: "center", alignItems: "center" }}
-                    onPress={() => this.selectAmenMall()}
+                    onPress={() => this.selectAmenPlay()}
                   >
                     <View
                       style={Styles.itemBoxAmen_not_gold}
@@ -819,7 +831,7 @@ class ChooseZoneModif extends React.Component {
                       <View>
                         <View>
                           <Image
-                            source={require("@Asset/images/amenitis/mall.png")}
+                            source={require("@Asset/images/amenitis/playground.png")}
                             style={Styles.itemAmen_not_gold}
                           />
                         </View>
@@ -830,7 +842,7 @@ class ChooseZoneModif extends React.Component {
                   </Col>
                   <Col
                     style={{ textAlign: "center", alignItems: "center" }}
-                    onPress={() => this.selectAmenDining()}
+                    onPress={() => this.selectAmenBbq()}
                   >
                     <View
                       style={Styles.itemBoxAmen_not_gold}
@@ -840,7 +852,7 @@ class ChooseZoneModif extends React.Component {
                       <View>
                         <View>
                           <Image
-                            source={require("@Asset/images/amenitis/dining.png")}
+                            source={require("@Asset/images/amenitis/bbq.png")}
                             style={Styles.itemAmen_not_gold}
                           />
                         </View>

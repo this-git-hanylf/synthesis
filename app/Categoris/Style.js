@@ -48,28 +48,32 @@ export default {
   },
   itemBoxAmen_not_gold: {
     // resizeMode: 'cover',
-    width: 145,
-    height: 145,
+    alignContent: 'center',
+    
+    width: 180,
+    height: 170,
     marginBottom: 20,
-    marginLeft: 10,
+    marginLeft: '15%',
     marginRight: 10,
     // backgroundColor: Colors.goldUrban,
     borderRadius: 5,
     // elevation: 10,
     shadowOffset: {
-      width: 15,
-      height: 15
-    }
+      width: 25,
+      height: 15,
+    },
     // shadowColor: "grey",
     // shadowOpacity: 0.1,
     // shadowRadius: 0,
   },
   itemAmen_not_gold: {
     marginBottom: 10,
-    width: "100%",
-    height: 150,
+    width: "90%",
+    height: 180,
     borderTopLeftRadius: 5,
-    borderTopRightRadius: 5
+    borderTopRightRadius: 5,
+    borderBottomLeftRadius: 5,
+    borderBottomRightRadius: 5,
   },
   layoutContent: {
     flex: 1,

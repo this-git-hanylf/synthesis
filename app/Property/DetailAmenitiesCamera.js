@@ -372,7 +372,7 @@ class DetailAmenitiesCamera extends React.Component {
               {this.state.amen ? (
                 <Text
                   style={{
-                    color: Colors.white,
+                    color: Colors.navyUrban,
                     textAlign: "center",
                     // alignContent:'center',
                     fontSize: 18,

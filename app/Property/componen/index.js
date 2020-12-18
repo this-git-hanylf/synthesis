@@ -125,11 +125,11 @@ export default StyleSheet.create({
   },
   imageContainer_tower: {
     flex: 1,
-    marginBottom: Platform.select({ ios: 0, android: 1 }), // Prevent a random Android rendering issue
+    marginBottom: Platform.select({ ios: 0, android: 0 }), // Prevent a random Android rendering issue
     backgroundColor: "transparent",
-    borderRadius: 8,
-    // borderTopLeftRadius: 8,
-    // borderTopRightRadius: 8,
+    // borderRadius: 8,
+    borderTopLeftRadius: 8,
+    borderTopRightRadius: 8,
     width: 220, //Untuk mengecilkan parallax tower
   },
   imageContainer: {

@@ -301,7 +301,7 @@ class DetailAmenitiesBbq extends React.Component {
                       <Text
                         style={{
                           fontWeight: "900",
-                          color: "#FFFFFF",
+                          color: Colors.white,
                           fontSize: 14,
                           textAlign: "center",
                         }}
@@ -312,7 +312,7 @@ class DetailAmenitiesBbq extends React.Component {
                     <Text
                       style={{
                         fontWeight: "900",
-                        color: "#FFFFFF",
+                        color: Colors.white,
                         fontSize: 14,
                         textAlign: "center",
                       }}
@@ -372,7 +372,7 @@ class DetailAmenitiesBbq extends React.Component {
               {this.state.amen ? (
                 <Text
                   style={{
-                    color: Colors.white,
+                    color: Colors.navyUrban,
                     textAlign: "center",
                     // alignContent:'center',
                     fontSize: 18,

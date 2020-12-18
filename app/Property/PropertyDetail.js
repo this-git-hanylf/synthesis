@@ -903,7 +903,8 @@ export default class extends React.Component {
         >
           <StatusBar
             // backgroundColor={Colors.statusBarNavy}
-            backgroundColor="transparent"
+            backgroundColor={Colors.goldUrban}
+            // backgroundColor="transparent"
             animated
             barStyle="light-content"
             translucent={true}
@@ -1110,7 +1111,7 @@ export default class extends React.Component {
                           <Icon
                             active
                             name="arrow-left"
-                            style={[Style.textNavy, { fontSize: 28 }]}
+                            style={[Style.textWhite, { fontSize: 28 }]}
                             type="MaterialCommunityIcons"
                           />
                         </Button>
@@ -1120,7 +1121,7 @@ export default class extends React.Component {
                         <Text
                           style={{
                             // fontWeight: "900",
-                            color: Colors.navyUrban,
+                            color: Colors.white,
                             fontSize: 15,
                             textAlign: "center",
                             fontFamily: Fonts.type.sfuiDisplayBold,
@@ -1867,7 +1868,7 @@ export default class extends React.Component {
                       <Text
                         style={{
                           fontFamily: Fonts.type.proximaNovaReg,
-                          color: Colors.white,
+                          color: Colors.navyUrban,
                           fontSize: 14,
                           paddingTop: 5,
                         }}
@@ -1896,7 +1897,7 @@ export default class extends React.Component {
                       <Text
                         style={{
                           fontFamily: Fonts.type.proximaNovaReg,
-                          color: Colors.white,
+                          color: Colors.navyUrban,
                           fontSize: 14,
                           paddingTop: 5,
                         }}
